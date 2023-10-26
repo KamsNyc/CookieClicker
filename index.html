@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cookie Clicker Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 class="title">Cookie Clicker Game</h1>
+      <div class="menu">
+        <img class="menu-btn" src="tips-btn.png" alt="Tips">
+        <img class="menu-btn" src="setting-btn.png" alt="Settings">
+      </div>
+    </header>
+    <div class="game">
+      <div class="score-container">
+        <span class="score-label">Score:</span>
+        <span class="clicks">0</span>
+      </div>
+      <div class="cookie-container">
+        <img class="cookie" src="img/cookie.png" alt="Cookie">
+        <img class="click-emoji" src="img/click-emoji.png" alt="Click Emoji">
+      </div>
+      <div class="progress-bar-container">
+        <div class="progress-bar"></div>
+        <span class="rank">Beginner</span>
+      </div>
+    </div>
+    <div class="shop">
+      <button class="shop-button">Shop</button>
+      <div class="shop-popup">
+        <div class="shop-menu">
+          <div class="upgrade-item" data-price="10">Auto Clicker - 10 cookies</div>
+          <div class="upgrade-item" data-price="20">Helper - 20 cookies</div>
+          <div class="upgrade-item" data-price="30">Score Boost - 30 cookies</div>
+          <div class="upgrade-item" data-price="40">Mega Clicker - 30 cookies</div>
+        </div>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="high-score">
+        <span class="high-score-label">High Score:</span>
+        <span class="high-score-value">0</span>
+      </div>
+      <div class="music">
+        <button class="music-button play"></button>
+      </div>
+    </div>
+  </div>
+
+  <audio id="background-music" src="background-music.mp3" loop></audio>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cookie Clicker Game</title>
+  <link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Cookie Clicker</h1>
+    <div class="game">
+      <div class="score-panel">
+        <div class="score">Score: <span class="clicks">0</span></div>
+        <div class="high-score">High Score: <span class="high-score-value">0</span></div>
+      </div>
+      <div class="cookie"></div>
+      <div class="click-emoji">
+        <img src="img/cookie.png" alt="Click Emoji">
+      </div>
+      <button class="shop-button">Shop</button>
+      <div class="shop-popup">
+        <div class="shop-menu">
+          <div class="upgrade-item" data-price="10">Auto Clicker</div>
+          <div class="upgrade-item" data-price="20">Helper</div>
+          <div class="upgrade-item" data-price="30">Score Boost</div>
+          <div class="upgrade-item" data-price="40">Mega Clicker</div>
+        </div>
+      </div>
+    </div>
+    <button class="music-button play"></button>
+    <audio id="background-music" src="background-music.mp3" loop></audio>
+    <audio id="click-sound" src="cookie-click.mp3"></audio>
+  </div>
+
+  <script src="script2.js"></script>
+</body>
+</html>

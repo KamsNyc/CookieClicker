@@ -1,0 +1,99 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .game {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cookie {
+    width: 200px;
+    height: 200px;
+    background-image: url('cookie.png');
+    background-size: cover;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .cookie:hover {
+    transform: scale(1.1);
+  }
+  
+  .click-emoji {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  
+  .shop-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .shop-button:hover {
+    background-color: #45a049;
+  }
+  
+  .shop-popup {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    display: none;
+  }
+  
+  .shop-menu {
+    padding: 10px;
+  }
+  
+  .upgrade-item {
+    padding: 8px;
+    background-color: #f1f1f1;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .upgrade-item:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .music-button {
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+    background-image: url('music-play.png');
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+    transition: background-image 0.2s;
+  }
+  
+  .music-button.pause {
+    background-image: url('music-pause.png');
+  }
+  
